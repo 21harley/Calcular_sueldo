@@ -11,10 +11,10 @@ import java.io.*;
  */
 public class Suma {
     private double numero;
-    private int nn;
+    private double nn;
     public Suma(){
         this.numero=0.0F;
-        this.nn=0;
+        this.nn=0.0F;
     }
     public Suma(double numero,int nn){
         this.numero=numero;
@@ -26,14 +26,15 @@ public class Suma {
         try{
         System.out.println("Sueldo");
         this.numero=Float.parseFloat(lector.readLine());
-        System.out.println("Edad");
+        System.out.println("bono anual");
         this.nn=Integer.parseInt(lector.readLine());   
         }catch(NumberFormatException a){
             System.out.println("Ingrese mal los datos ");   
         }
+        this.nn=this.numero*12+nn;
     }
     void mostrar_datos(){
-        System.out.println("Su edad es "+this.nn);
+        System.out.println("gana al año "+this.nn);
         System.out.println("Su sueldo es "+this.numero);
     }
 }
