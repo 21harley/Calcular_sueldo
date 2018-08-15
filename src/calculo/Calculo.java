@@ -5,6 +5,7 @@
  */
 package calculo;
 import  java.io.*;
+import calculo.*;
 /**
  *
  * @author CASA
@@ -14,10 +15,11 @@ public class Calculo {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    public static void main(String[] args)throws IOException {
         // TODO code application logic here
-        DataInputStream lector= new DataInputStream(System.in);
-        
+        Suma a=new Suma();
+        a.cargar_datos();
+        a.mostrar_datos();
     }
     
 }
