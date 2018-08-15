@@ -17,13 +17,19 @@ public class Calculo {
      */
     public static void main(String[] args)throws IOException {
         // TODO code application logic here
+       DataInputStream lector=new DataInputStream(System.in);
         int e=0;
         Suma a=new Suma();
        do{
          a.cargar_datos();
          a.mostrar_datos();
+         try{
+          System.out.println("¿Quiere salir 1=si 2=no?");
+           e=Integer.parseInt(lector.readLine());
+         }catch(NumberFormatException t){
+             System.out.println("Ingreso mal los datos");
+         };
        }while(e==0);
- 
     }
     
 }
