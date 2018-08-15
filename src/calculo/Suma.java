@@ -23,10 +23,14 @@ public class Suma {
     void cargar_datos() throws IOException{
         DataInputStream lector = new DataInputStream(System.in);
         System.out.println("Ingrese los proximos datos personales ");
+        try{
         System.out.println("Sueldo");
         this.numero=Float.parseFloat(lector.readLine());
         System.out.println("Edad");
-        this.nn=Integer.parseInt(lector.readLine());
+        this.nn=Integer.parseInt(lector.readLine());   
+        }catch(NumberFormatException a){
+            System.out.println("Ingrese mal los datos ");   
+        }
     }
     void mostrar_datos(){
         System.out.println("Su edad es "+this.nn);
