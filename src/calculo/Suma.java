@@ -25,5 +25,7 @@ public class Suma {
         System.out.println("Ingrese los proximos datos personales ");
         System.out.println("Sueldo");
         this.numero=Float.parseFloat(lector.readLine());
+        System.out.println("Edad");
+        this.nn=Integer.parseInt(lector.readLine());
     }
 }
