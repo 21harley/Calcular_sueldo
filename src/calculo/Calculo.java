@@ -17,9 +17,13 @@ public class Calculo {
      */
     public static void main(String[] args)throws IOException {
         // TODO code application logic here
+        int e=0;
         Suma a=new Suma();
-        a.cargar_datos();
-        a.mostrar_datos();
+       do{
+         a.cargar_datos();
+         a.mostrar_datos();
+       }while(e==0);
+ 
     }
     
 }
