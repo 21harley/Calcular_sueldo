@@ -28,4 +28,8 @@ public class Suma {
         System.out.println("Edad");
         this.nn=Integer.parseInt(lector.readLine());
     }
+    void mostrar_datos(){
+        System.out.println("Su edad es "+this.nn);
+        System.out.println("Su sueldo es "+this.numero);
+    }
 }
